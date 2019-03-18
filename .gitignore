@@ -1,0 +1,14 @@
+settings.py
+.vscode
+images
+*.checkpoint
+__pycache__
+env/
+*.log
+blacklist.txt
+followed.txt
+friends.txt
+skipped.txt
+unfollowed.txt
+whitelist.txt
+comments.txt
