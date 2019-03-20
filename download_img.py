@@ -5,8 +5,10 @@ import requests
 def download_images(url, filename):
     filename = 'images/' + filename
 
-    if not os.path.exists('images'):
-        os.makedirs('images')
+
+    os.makedirs('images', exist_ok=True)
+    # if not os.path.exists('images'):
+    #     os.makedirs('images')
 
     response = requests.get(url)
     with open(filename, 'wb') as f:
