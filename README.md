@@ -5,10 +5,9 @@ and post them on your Instagram
 
 ### How to install
 
-You need to create a file 'settings.py' and and write there your login and password from Instagram:
+You need to introduce login and passoword of your instargram in terminal
 ```
-LOGIN = 'your login'
-PASSWORD = 'your password'
+$ python main.py your_login your_password
 ```
 
 Python3 should be already installed. 
