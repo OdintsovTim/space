@@ -3,7 +3,7 @@ import os
 
 from instabot import Bot
 
-from fetch_hubble import download_hubble_images
+from fetch_hubble import get_images_id_collections
 from fetch_spacex import fetch_spacex_last_launch
 
 
@@ -19,7 +19,7 @@ def main():
     password = args.password
 
     fetch_spacex_last_launch()
-    download_hubble_images('spacecraft')
+    get_images_id_collections('spacecraft')
     myfiles = os.listdir('images')
     bot = Bot()
     bot.login(username=login, password=password)
